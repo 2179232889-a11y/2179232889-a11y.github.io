@@ -31,7 +31,7 @@
   --margin: clamp(18px, 2.3vw, 36px);
   --gutter: clamp(14px, 1.6vw, 28px);
   --font-display: "Cormorant Garamond", "Songti SC", "STSong", "SimSun", serif;
-  --font-text: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  --font-text: system-ui, sans-serif;
   --step-small: 0.875rem;
   --step-body: 1.125rem;
   --step-lead: clamp(1.4rem, 1.25rem + 0.45vw, 1.5rem);
