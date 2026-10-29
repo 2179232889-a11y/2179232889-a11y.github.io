@@ -172,6 +172,28 @@ if (posterViewport && posterTrack && posterTrack.querySelector(".poster-card")) 
     posterTrack.append(clone);
   }
 
+  const lazyPosterImages = [...posterTrack.querySelectorAll("img[data-lazy-src]")];
+  const loadPosterImage = (image) => {
+    image.src = image.dataset.lazySrc;
+    delete image.dataset.lazySrc;
+  };
+
+  if ("IntersectionObserver" in window) {
+    const posterImageObserver = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          loadPosterImage(entry.target);
+          posterImageObserver.unobserve(entry.target);
+        }
+      },
+      { rootMargin: "0px 300px 0px 300px" }
+    );
+    lazyPosterImages.forEach((image) => posterImageObserver.observe(image));
+  } else {
+    lazyPosterImages.forEach(loadPosterImage);
+  }
+
   function syncPosterDuration() {
     const distance = posterTrack.scrollWidth / 2;
     const duration = Math.max(30, distance / 26);

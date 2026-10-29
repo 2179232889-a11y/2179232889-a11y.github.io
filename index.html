@@ -8,11 +8,12 @@
       content="罗鑫的个人简历与作品集：内容策划、品牌传播、AI 视频、系列海报与获奖记录。"
     />
     <meta name="theme-color" content="#eae3d6" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+SC:wght@400;500;600&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="/assets/fonts/cormorant-garamond-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <link rel="stylesheet" href="/styles.css" />
     <title>罗鑫｜内容策划与品牌传播</title>
@@ -74,16 +75,13 @@
           <div class="discipline-grid" aria-label="作品方向">
             <a class="discipline discipline-video" href="#ai-video">
               <span class="discipline-media media-stack">
-                <video
-                  muted
-                  loop
-                  playsinline
-                  preload="metadata"
-                  poster="/assets/video/creative-workflow-poster.jpg"
+                <img
+                  src="/assets/video/creative-workflow-poster-thumb.jpg"
+                  width="1280"
+                  height="720"
+                  alt=""
                   aria-hidden="true"
-                >
-                  <source src="/assets/video/creative-workflow.mp4" type="video/mp4" />
-                </video>
+                />
                 <span class="media-tape" aria-hidden="true"></span>
                 <span class="play-mark" aria-hidden="true">▶</span>
               </span>
@@ -98,7 +96,7 @@
             <a class="discipline discipline-poster" href="#poster">
               <span class="discipline-media poster-stack">
                 <img
-                  src="/assets/posters/hailu-beach.webp"
+                  src="/assets/posters/hailu-beach-thumb.webp"
                   width="1000"
                   height="1400"
                   alt="海露滴眼液系列海报，眼睛角色在海边度假"
@@ -106,7 +104,7 @@
                 />
                 <img
                   class="poster-side"
-                  src="/assets/posters/sanjin-green.webp"
+                  src="/assets/posters/sanjin-green-thumb.webp"
                   width="1000"
                   height="1400"
                   alt=""
@@ -126,7 +124,7 @@
             <a class="discipline discipline-awards" href="#awards">
               <span class="discipline-media awards-stack">
                 <img
-                  src="/assets/awards/award-idea-second-ideas.jpg"
+                  src="/assets/awards/award-idea-second-ideas-thumb.webp"
                   width="1279"
                   height="1782"
                   alt="《别让想法打结》重庆赛区二等奖证书"
@@ -134,7 +132,7 @@
                 />
                 <img
                   class="awards-side"
-                  src="/assets/awards/award-reverse-world-first.jpg"
+                  src="/assets/awards/award-reverse-world-first-thumb.webp"
                   width="1280"
                   height="1707"
                   alt=""
@@ -219,7 +217,7 @@
                 data-clip-title="让想法打结"
                 aria-pressed="true"
               >
-                <img src="/assets/video/tangled-ideas-poster.jpg" width="1280" height="720" alt="" />
+                <img src="/assets/video/tangled-ideas-poster-thumb.jpg" width="1280" height="720" alt="" loading="lazy" />
                 <span>让想法打结</span>
               </button>
               <button
@@ -231,7 +229,7 @@
                 data-clip-title="创意工作流"
                 aria-pressed="false"
               >
-                <img src="/assets/video/creative-workflow-poster.jpg" width="1280" height="720" alt="" />
+                <img src="/assets/video/creative-workflow-poster-thumb.jpg" width="1280" height="720" alt="" loading="lazy" />
                 <span>创意工作流</span>
               </button>
               <button
@@ -243,7 +241,7 @@
                 data-clip-title="植物影像"
                 aria-pressed="false"
               >
-                <img src="/assets/video/botanical-film-poster.jpg" width="1280" height="720" alt="" />
+                <img src="/assets/video/botanical-film-poster-thumb.jpg" width="1280" height="720" alt="" loading="lazy" />
                 <span>植物影像</span>
               </button>
             </div>
@@ -294,7 +292,7 @@
               data-src="/assets/posters/hailu-beach.webp"
               data-title="海露｜给眼睛放个假"
             >
-              <img src="/assets/posters/hailu-beach.webp" width="1000" height="1400" alt="海露海报，眼睛角色在海边度假" loading="lazy" />
+              <img src="/assets/posters/hailu-beach-thumb.webp" width="1000" height="1400" alt="海露海报，眼睛角色在海边度假" loading="lazy" />
               <span>海露 · 给眼睛放个假</span>
             </button>
             <button
@@ -305,7 +303,7 @@
               data-src="/assets/posters/hailu-spring.webp"
               data-title="海露｜眼睛的温泉假期"
             >
-              <img src="/assets/posters/hailu-spring.webp" width="1000" height="1400" alt="海露海报，眼睛角色在温泉中休息" loading="lazy" />
+              <img src="/assets/posters/hailu-spring-thumb.webp" width="1000" height="1400" alt="海露海报，眼睛角色在温泉中休息" loading="lazy" />
               <span>海露 · 温泉假期</span>
             </button>
             <button
@@ -316,7 +314,7 @@
               data-src="/assets/posters/hailu-mountain.webp"
               data-title="海露｜看得远一点"
             >
-              <img src="/assets/posters/hailu-mountain.webp" width="1000" height="1400" alt="海露海报，眼睛角色站在山峰上看海" loading="lazy" />
+              <img src="/assets/posters/hailu-mountain-thumb.webp" width="1000" height="1400" alt="海露海报，眼睛角色站在山峰上看海" loading="lazy" />
               <span>海露 · 看得远一点</span>
             </button>
             <button
@@ -327,7 +325,7 @@
               data-src="/assets/posters/yangyuanqing-clock.webp"
               data-title="养元青｜金银葫芦守门"
             >
-              <img src="/assets/posters/yangyuanqing-clock.webp" width="1000" height="1400" alt="养元青海报，金银葫芦角色与闹钟" loading="lazy" />
+              <img src="/assets/posters/yangyuanqing-clock-thumb.webp" width="1000" height="1400" alt="养元青海报，金银葫芦角色与闹钟" loading="lazy" />
               <span>养元青 · 金银葫芦守门</span>
             </button>
             <button
@@ -338,7 +336,7 @@
               data-src="/assets/posters/yangyuanqing-hearts.webp"
               data-title="养元青｜头等大事"
             >
-              <img src="/assets/posters/yangyuanqing-hearts.webp" width="1000" height="1400" alt="养元青海报，金银葫芦角色散布爱心" loading="lazy" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-src="/assets/posters/yangyuanqing-hearts-thumb.webp" width="1000" height="1400" alt="养元青海报，金银葫芦角色散布爱心" loading="lazy" />
               <span>养元青 · 头等大事</span>
             </button>
             <button
@@ -349,7 +347,7 @@
               data-src="/assets/posters/yangyuanqing-interview.webp"
               data-title="养元青｜面试现场"
             >
-              <img src="/assets/posters/yangyuanqing-interview.webp" width="1000" height="1400" alt="养元青海报，面试中的男性角色" loading="lazy" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-src="/assets/posters/yangyuanqing-interview-thumb.webp" width="1000" height="1400" alt="养元青海报，面试中的男性角色" loading="lazy" />
               <span>养元青 · 面试现场</span>
             </button>
             <button
@@ -360,7 +358,7 @@
               data-src="/assets/posters/sanjin-green.webp"
               data-title="三金西瓜霜｜嗓子免打扰"
             >
-              <img src="/assets/posters/sanjin-green.webp" width="1000" height="1400" alt="三金西瓜霜海报，绿色办公室场景" loading="lazy" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-src="/assets/posters/sanjin-green-thumb.webp" width="1000" height="1400" alt="三金西瓜霜海报，绿色办公室场景" loading="lazy" />
               <span>三金西瓜霜 · 嗓子免打扰</span>
             </button>
             <button
@@ -371,7 +369,7 @@
               data-src="/assets/posters/sanjin-blue.webp"
               data-title="三金西瓜霜｜办公室"
             >
-              <img src="/assets/posters/sanjin-blue.webp" width="1000" height="1400" alt="三金西瓜霜海报，蓝色办公室场景" loading="lazy" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-src="/assets/posters/sanjin-blue-thumb.webp" width="1000" height="1400" alt="三金西瓜霜海报，蓝色办公室场景" loading="lazy" />
               <span>三金西瓜霜 · 办公室</span>
             </button>
             <button
@@ -382,7 +380,7 @@
               data-src="/assets/posters/sanjin-stage.webp"
               data-title="三金西瓜霜｜舞台"
             >
-              <img src="/assets/posters/sanjin-stage.webp" width="1000" height="1400" alt="三金西瓜霜海报，粉红色舞台麦克风" loading="lazy" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-src="/assets/posters/sanjin-stage-thumb.webp" width="1000" height="1400" alt="三金西瓜霜海报，粉红色舞台麦克风" loading="lazy" />
               <span>三金西瓜霜 · 舞台</span>
             </button>
             <button
@@ -393,7 +391,7 @@
               data-src="/assets/posters/centaine-wave.webp"
               data-title="100 年润发｜植物润养"
             >
-              <img src="/assets/posters/centaine-wave.webp" width="1000" height="1400" alt="100 年润发海报，绿色发丝构成海浪" loading="lazy" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-src="/assets/posters/centaine-wave-thumb.webp" width="1000" height="1400" alt="100 年润发海报，绿色发丝构成海浪" loading="lazy" />
               <span>100 年润发 · 植物润养</span>
             </button>
             <button
@@ -404,7 +402,7 @@
               data-src="/assets/posters/centaine-mountain.webp"
               data-title="100 年润发｜一亩茶山"
             >
-              <img src="/assets/posters/centaine-mountain.webp" width="1000" height="1400" alt="100 年润发海报，绿色山峦与洗护产品" loading="lazy" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-src="/assets/posters/centaine-mountain-thumb.webp" width="1000" height="1400" alt="100 年润发海报，绿色山峦与洗护产品" loading="lazy" />
               <span>100 年润发 · 一亩茶山</span>
             </button>
             <button
@@ -415,7 +413,7 @@
               data-src="/assets/posters/centaine-hair.webp"
               data-title="100 年润发｜发根立起"
             >
-              <img src="/assets/posters/centaine-hair.webp" width="1000" height="1400" alt="100 年润发海报，发丝与植物叶片" loading="lazy" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-src="/assets/posters/centaine-hair-thumb.webp" width="1000" height="1400" alt="100 年润发海报，发丝与植物叶片" loading="lazy" />
               <span>100 年润发 · 发根立起</span>
             </button>
             <button
@@ -426,7 +424,7 @@
               data-src="/assets/posters/shuanglu-igniter.webp"
               data-title="双鹿电池｜9000 次打火"
             >
-              <img src="/assets/posters/shuanglu-igniter.webp" width="1000" height="1400" alt="双鹿电池海报，燃气灶蓝色火焰" loading="lazy" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-src="/assets/posters/shuanglu-igniter-thumb.webp" width="1000" height="1400" alt="双鹿电池海报，燃气灶蓝色火焰" loading="lazy" />
               <span>双鹿电池 · 9000 次打火</span>
             </button>
             <button
@@ -437,7 +435,7 @@
               data-src="/assets/posters/shuanglu-door.webp"
               data-title="双鹿电池｜23000 次开门"
             >
-              <img src="/assets/posters/shuanglu-door.webp" width="1000" height="1400" alt="双鹿电池海报，电子门锁与电池" loading="lazy" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-src="/assets/posters/shuanglu-door-thumb.webp" width="1000" height="1400" alt="双鹿电池海报，电子门锁与电池" loading="lazy" />
               <span>双鹿电池 · 23000 次开门</span>
             </button>
             <button
@@ -448,7 +446,7 @@
               data-src="/assets/posters/shuanglu-light.webp"
               data-title="双鹿电池｜十年质保"
             >
-              <img src="/assets/posters/shuanglu-light.webp" width="1000" height="1400" alt="双鹿电池海报，夜间停车场与路灯" loading="lazy" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-lazy-src="/assets/posters/shuanglu-light-thumb.webp" width="1000" height="1400" alt="双鹿电池海报，夜间停车场与路灯" loading="lazy" />
               <span>双鹿电池 · 十年质保</span>
             </button>
             </div>
@@ -471,70 +469,70 @@
                 class="award-card"
                 type="button"
                 data-media-type="image"
-                data-src="/assets/awards/award-reverse-world-first.jpg"
+                data-src="/assets/awards/award-reverse-world-first.webp"
                 data-title="“倒过来看世界”短视频大赛｜一等奖"
               >
-                <img src="/assets/awards/award-reverse-world-first.jpg" width="1280" height="1707" alt="“倒过来看世界”短视频大赛一等奖奖杯与证书" loading="lazy" />
+                <img src="/assets/awards/award-reverse-world-first-thumb.webp" width="1280" height="1707" alt="“倒过来看世界”短视频大赛一等奖奖杯与证书" loading="lazy" />
                 <span>“倒过来看世界”短视频大赛 · 一等奖</span>
               </button>
               <button
                 class="award-card"
                 type="button"
                 data-media-type="image"
-                data-src="/assets/awards/award-challenge-cup-third.jpg"
+                data-src="/assets/awards/award-challenge-cup-third.webp"
                 data-title="“挑战杯”重庆理工大学选拔赛｜三等奖"
               >
-                <img src="/assets/awards/award-challenge-cup-third.jpg" width="1707" height="1280" alt="“挑战杯”重庆理工大学选拔赛三等奖证书" loading="lazy" />
+                <img src="/assets/awards/award-challenge-cup-third-thumb.webp" width="1707" height="1280" alt="“挑战杯”重庆理工大学选拔赛三等奖证书" loading="lazy" />
                 <span>“挑战杯”重庆理工大学选拔赛 · 三等奖</span>
               </button>
               <button
                 class="award-card"
                 type="button"
                 data-media-type="image"
-                data-src="/assets/awards/award-idea-excellent-straw.jpg"
+                data-src="/assets/awards/award-idea-excellent-straw.webp"
                 data-title="第18届大广赛重庆赛区｜优秀奖"
               >
-                <img src="/assets/awards/award-idea-excellent-straw.jpg" width="1137" height="1538" alt="《童心吸管，一键通关！》优秀奖证书" loading="lazy" />
+                <img src="/assets/awards/award-idea-excellent-straw-thumb.webp" width="1137" height="1538" alt="《童心吸管，一键通关！》优秀奖证书" loading="lazy" />
                 <span>《童心吸管，一键通关！》· 优秀奖</span>
               </button>
               <button
                 class="award-card"
                 type="button"
                 data-media-type="image"
-                data-src="/assets/awards/award-idea-excellent-chaos.jpg"
+                data-src="/assets/awards/award-idea-excellent-chaos.webp"
                 data-title="第18届大广赛｜优秀奖"
               >
-                <img src="/assets/awards/award-idea-excellent-chaos.jpg" width="1200" height="1687" alt="《重塑混乱，自成山海》优秀奖证书" loading="lazy" />
+                <img src="/assets/awards/award-idea-excellent-chaos-thumb.webp" width="1200" height="1687" alt="《重塑混乱，自成山海》优秀奖证书" loading="lazy" />
                 <span>《重塑混乱，自成山海》· 优秀奖</span>
               </button>
               <button
                 class="award-card"
                 type="button"
                 data-media-type="image"
-                data-src="/assets/awards/award-carbon-pioneer-first.jpg"
+                data-src="/assets/awards/award-carbon-pioneer-first.webp"
                 data-title="新文科实践创新大赛校内选拔赛｜一等奖"
               >
-                <img src="/assets/awards/award-carbon-pioneer-first.jpg" width="1804" height="1280" alt="“碳”路先锋项目新文科实践创新大赛一等奖证书" loading="lazy" />
+                <img src="/assets/awards/award-carbon-pioneer-first-thumb.webp" width="1804" height="1280" alt="“碳”路先锋项目新文科实践创新大赛一等奖证书" loading="lazy" />
                 <span>“碳”路先锋项目 · 一等奖</span>
               </button>
               <button
                 class="award-card"
                 type="button"
                 data-media-type="image"
-                data-src="/assets/awards/award-idea-third-forest.jpg"
+                data-src="/assets/awards/award-idea-third-forest.webp"
                 data-title="第18届大广赛重庆赛区｜三等奖"
               >
-                <img src="/assets/awards/award-idea-third-forest.jpg" width="1024" height="1420" alt="《让生活，长出森林》三等奖证书" loading="lazy" />
+                <img src="/assets/awards/award-idea-third-forest-thumb.webp" width="1024" height="1420" alt="《让生活，长出森林》三等奖证书" loading="lazy" />
                 <span>《让生活，长出森林》· 三等奖</span>
               </button>
               <button
                 class="award-card"
                 type="button"
                 data-media-type="image"
-                data-src="/assets/awards/award-idea-second-ideas.jpg"
+                data-src="/assets/awards/award-idea-second-ideas.webp"
                 data-title="第18届大广赛重庆赛区｜二等奖"
               >
-                <img src="/assets/awards/award-idea-second-ideas.jpg" width="1279" height="1782" alt="《别让想法打结》二等奖证书" loading="lazy" />
+                <img src="/assets/awards/award-idea-second-ideas-thumb.webp" width="1279" height="1782" alt="《别让想法打结》二等奖证书" loading="lazy" />
                 <span>《别让想法打结》· 二等奖</span>
               </button>
             </div>
