@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.taste-skill/
+tmp/
+*.log
+/preview-*.png
+/blank-zone*.png
+/contact-sheet.jpg
