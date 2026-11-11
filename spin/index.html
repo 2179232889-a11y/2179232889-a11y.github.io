@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+  <meta name="theme-color" content="#FF4D8D">
+  <meta name="description" content="就你了：聚会和课堂都能用的随机转盘，抽人、抽题、抽惩罚，扫码即开。">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="就你了">
+  <title>就你了｜抽人 · 抽题 · 抽惩罚</title>
+  <link rel="preload" as="font" href="assets/fonts/smiley.woff" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <a class="skip" href="#main">跳到转盘</a>
+
+  <header class="top">
+    <div class="brand">
+      <span class="brand-mark">★</span>
+      <h1>就你了</h1>
+    </div>
+    <div class="scene" role="tablist" aria-label="使用场景">
+      <button type="button" class="is-on" data-scene="party" role="tab" aria-selected="true">聚会</button>
+      <button type="button" data-scene="class" role="tab" aria-selected="false">课堂</button>
+    </div>
+  </header>
+
+  <nav class="modes" role="tablist" aria-label="抽取类型">
+    <button type="button" class="is-on" data-mode="people" role="tab" aria-selected="true">抽人</button>
+    <button type="button" data-mode="question" role="tab" aria-selected="false">抽题</button>
+    <button type="button" data-mode="punish" role="tab" aria-selected="false">抽惩罚</button>
+  </nav>
+
+  <main id="main">
+    <section class="stage" aria-label="转盘">
+      <div class="wheel-wrap">
+        <div class="pointer" aria-hidden="true">
+          <span>▼</span>
+        </div>
+        <canvas id="wheel" width="640" height="640" role="img" aria-label="随机转盘"></canvas>
+        <div class="hub" aria-hidden="true"><b>转</b></div>
+      </div>
+    </section>
+
+    <p class="hint" id="hint">先在名单里加上名字，再按下面的按钮。</p>
+
+    <div class="actions">
+      <button type="button" class="spin" id="spin">转一下</button>
+      <button type="button" class="edit" id="open-edit">编辑名单</button>
+    </div>
+  </main>
+
+  <div class="sheet" id="sheet" hidden>
+    <div class="sheet-back" data-close></div>
+    <div class="sheet-panel" role="dialog" aria-labelledby="sheet-title">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="sheet-head">
+        <h2 id="sheet-title">编辑名单</h2>
+        <button type="button" class="icon-close" data-close aria-label="关闭">×</button>
+      </div>
+      <p class="sheet-note" id="sheet-note"></p>
+      <form class="add" id="add-form">
+        <input id="add-input" type="text" maxlength="40" autocomplete="off" enterkeyhint="done" placeholder="输入后回车添加">
+        <button type="submit">添加</button>
+      </form>
+      <ul class="list" id="item-list"></ul>
+      <div class="sheet-foot">
+        <button type="button" class="ghost" id="reset-list">恢复默认</button>
+        <button type="button" class="ghost danger" id="clear-list">清空</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="result" id="result" hidden>
+    <div class="result-back" data-close-result></div>
+    <div class="ticket" role="dialog" aria-labelledby="result-label">
+      <p class="ticket-kicker" id="result-kicker">抽人结果</p>
+      <p class="ticket-label" id="result-label"></p>
+      <p class="ticket-stamp">就你了</p>
+      <div class="ticket-actions">
+        <button type="button" class="spin again" id="spin-again">再转一次</button>
+        <button type="button" class="ghost" data-close-result>关掉</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>
