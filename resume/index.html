@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#165A3E">
+  <meta name="theme-color" content="#FF5FA2">
   <meta name="description" content="罗鑫，重庆理工大学广告学。平面设计、影像制作与证书作品集。">
   <title>罗鑫｜平面 · 影像 · 简历</title>
   <link rel="preload" as="image" href="assets/posters/hailu-beach-thumb.webp">
@@ -14,432 +14,420 @@
 <body>
   <a class="skip" href="#main">跳到主要内容</a>
   <div class="grain" aria-hidden="true"></div>
-  <div class="cursor" id="cursor" aria-hidden="true">
-    <svg class="claw" viewBox="0 0 64 72" width="44" height="50">
-      <g class="claw-arm">
-        <rect x="29" y="0" width="6" height="16" rx="2" fill="#c9a36a"/>
-        <circle cx="32" cy="20" r="7" fill="#e8d3a0" stroke="#5a3a16" stroke-width="2"/>
-      </g>
-      <g class="claw-prongs">
-        <path class="prong prong-l" d="M26 24 C18 28 10 40 12 54 C16 50 22 42 28 36 C29 32 28 26 26 24Z" fill="#f0e0b8" stroke="#5a3a16" stroke-width="2"/>
-        <path class="prong prong-r" d="M38 24 C46 28 54 40 52 54 C48 50 42 42 36 36 C35 32 36 26 38 24Z" fill="#f0e0b8" stroke="#5a3a16" stroke-width="2"/>
-      </g>
-    </svg>
-    <span class="cursor-label" id="cursor-label"></span>
-  </div>
+  <div class="cursor" aria-hidden="true"><span class="cursor-dot">★</span><span class="cursor-label"></span></div>
 
-  <header class="hud">
-    <a class="hud-mark" href="#intro">
-      <span class="hud-coin" aria-hidden="true">鑫</span>
-      <span class="hud-name">罗鑫</span>
-      <span class="hud-en">PLAY DESK</span>
+  <header class="topbar">
+    <a class="brand" href="#intro" data-cursor="查看">
+      <span class="brand-mark">罗鑫</span>
+      <span class="brand-sub">PORTFOLIO</span>
     </a>
-    <nav class="hud-nav" aria-label="站点导航">
-      <a href="#posters">平面</a>
-      <a href="#films">影像</a>
-      <a href="#awards">证书</a>
-      <a href="#cv">简历</a>
+    <nav class="desk-nav" aria-label="站点导航">
+      <a href="#posters" data-cursor="查看">平面</a>
+      <a href="#films" data-cursor="查看">影像</a>
+      <a href="#awards" data-cursor="查看">证书</a>
+      <a href="#cv" data-cursor="查看">简历</a>
     </nav>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">菜单</button>
   </header>
   <div class="mobile-nav" id="mobile-nav" hidden>
-    <a href="#intro"><em>DESK</em>开场桌面</a>
-    <a href="#posters"><em>01</em>平面设计</a>
-    <a href="#films"><em>02</em>影像</a>
-    <a href="#awards"><em>03</em>证书</a>
-    <a href="#cv"><em>04</em>简历</a>
+    <a href="#intro"><em>01</em>简介</a>
+    <a href="#posters"><em>02</em>平面</a>
+    <a href="#films"><em>03</em>影像</a>
+    <a href="#awards"><em>04</em>证书</a>
+    <a href="#cv"><em>05</em>简历</a>
   </div>
 
-  <div class="gate" id="gate" hidden>
-    <div class="gate-door gate-left"></div>
-    <div class="gate-door gate-right"></div>
-    <p class="gate-card">
-      <span class="gate-stage" id="gate-stage">STAGE 01</span>
-      <span class="gate-title" id="gate-title">平面设计</span>
-    </p>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>平面设计 ★ 影像制作 ★ 证书奖状 ★ 广告学 · 视觉设计 ★ 重庆理工大学 ★ 学院奖 2026 秋季赛 ★ 创意大联盟 ★ HIRE ME ★ </span>
+      <span>平面设计 ★ 影像制作 ★ 证书奖状 ★ 广告学 · 视觉设计 ★ 重庆理工大学 ★ 学院奖 2026 秋季赛 ★ 创意大联盟 ★ HIRE ME ★ </span>
+    </div>
   </div>
 
   <main id="main">
-    <section class="table-wrap" id="intro">
-      <div class="table">
-        <div class="rail-corner rc-tl" aria-hidden="true"></div>
-        <div class="rail-corner rc-tr" aria-hidden="true"></div>
-        <div class="rail-corner rc-bl" aria-hidden="true"></div>
-        <div class="rail-corner rc-br" aria-hidden="true"></div>
-        <div class="desk" id="desk">
-          <p class="hint-stamp">拔起作品投进架子</p>
-
-          <aside class="dock" id="desk-dock">
-            <div class="dock-plate">
-              <span class="dock-en">DROP</span>
-              <strong>架子</strong>
-            </div>
-            <div class="dock-slot" id="desk-slot">
-              <span class="dock-mouth" aria-hidden="true"></span>
-              <p class="dock-tip">把海报放进来<br>看大图</p>
-            </div>
-            <button class="reset-btn" type="button" id="reset-desk">重置桌面</button>
-          </aside>
-
-          <h1 class="piece typo typo-luo" data-drag data-cursor="拖我" style="--x:4%; --y:14%; --r:-4deg;">
-            <span>罗</span>
-          </h1>
-          <p class="piece typo typo-xin" data-drag data-cursor="拖我" style="--x:20%; --y:36%; --r:5deg;" aria-hidden="true">
-            <span>鑫</span>
-          </p>
-          <p class="piece ticket ticket-name" data-drag data-cursor="拖我" style="--x:6%; --y:5%; --r:-8deg;">
-            <span class="ticket-holes" aria-hidden="true"></span>
-            LUO XIN
-            <i>AD · DESIGN</i>
-          </p>
-
-          <aside class="piece slip" data-drag data-cursor="拖我" style="--x:4%; --y:62%; --r:-3deg; --w:230px;">
-            <span class="tape tape-wasabi" aria-hidden="true"></span>
-            <p class="slip-role">广告学 · 视觉设计</p>
-            <p class="slip-school">重庆理工大学语言与传播学院 2025 级</p>
-            <p class="slip-lead">做品牌命题下的系列海报、微电影广告和内容策划。现任创意大联盟社长，班长兼文娱委员。</p>
-          </aside>
-
-          <span class="piece token token-hire" data-drag data-cursor="拖我" style="--x:33%; --y:6%; --r:-14deg;">HIRE ME</span>
-          <span class="piece token token-job" data-drag data-cursor="拖我" style="--x:30%; --y:34%; --r:8deg;">社长</span>
-          <span class="piece token token-seal" data-drag data-cursor="拖我" style="--x:47%; --y:33%; --r:-10deg;">100% 原创</span>
-          <span class="piece ticket ticket-stub" data-drag data-cursor="拖我" style="--x:7%; --y:48%; --r:10deg;">学院奖 2026</span>
-
-          <figure class="piece polaroid" data-drag data-cursor="拖我" style="--x:54%; --y:4%; --r:7deg; --w:190px;">
-            <span class="tape tape-pink tape-tl" aria-hidden="true"></span>
-            <div class="polaroid-skin">
-              <img src="assets/portrait/luo-xin-portrait.webp" alt="罗鑫肖像" width="720" height="900" draggable="false">
-              <figcaption>罗鑫 · 重庆</figcaption>
-            </div>
-          </figure>
-
-          <figure class="piece work work-hailu" data-drag data-open data-cursor="查看" data-group="posters" data-full="assets/posters/hailu-beach.webp" data-title="给眼睛放个假" data-kicker="海露 · 学院奖 2026" style="--x:36%; --y:8%; --r:-8deg; --w:176px;">
-            <button type="button" class="work-skin" data-cursor="查看">
-              <img src="assets/posters/hailu-beach-thumb.webp" alt="海露海报，眼睛角色在海边度假" width="600" height="850" draggable="false">
-            </button>
-            <span class="tape tape-lemon" aria-hidden="true"></span>
-          </figure>
-
-          <figure class="piece work work-hearts" data-drag data-open data-cursor="查看" data-group="posters" data-full="assets/posters/yangyuanqing-hearts.webp" data-title="头等大事" data-kicker="养元青 · 学院奖 2026" style="--x:40%; --y:50%; --r:6deg; --w:158px;">
-            <button type="button" class="work-skin" data-cursor="查看">
-              <img src="assets/posters/yangyuanqing-hearts-thumb.webp" alt="养元青海报，金银葫芦角色散布爱心" width="600" height="850" draggable="false">
-            </button>
-            <span class="badge-star" aria-hidden="true">★</span>
-          </figure>
-
-          <figure class="piece work work-stage" data-drag data-open data-cursor="查看" data-group="posters" data-full="assets/posters/sanjin-stage.webp" data-title="舞台" data-kicker="三金西瓜霜 · 学院奖 2026" style="--x:22%; --y:50%; --r:-5deg; --w:148px;">
-            <button type="button" class="work-skin" data-cursor="查看">
-              <img src="assets/posters/sanjin-stage-thumb.webp" alt="三金西瓜霜海报，粉红色舞台麦克风" width="600" height="850" draggable="false">
-            </button>
-            <span class="tape tape-mint" aria-hidden="true"></span>
-          </figure>
-
-          <figure class="piece work work-wave" data-drag data-open data-cursor="查看" data-group="posters" data-full="assets/posters/centaine-wave.webp" data-title="植物润养" data-kicker="100 年润发 · 学院奖 2026" style="--x:58%; --y:44%; --r:9deg; --w:136px;">
-            <button type="button" class="work-skin" data-cursor="查看">
-              <img src="assets/posters/centaine-wave-thumb.webp" alt="100 年润发海报，绿色发丝构成海浪" width="600" height="850" draggable="false">
-            </button>
-          </figure>
-
-          <figure class="piece work work-igniter" data-drag data-open data-cursor="查看" data-group="posters" data-full="assets/posters/shuanglu-igniter.webp" data-title="9000 次打火" data-kicker="双鹿电池 · 学院奖 2026" style="--x:70%; --y:11%; --r:-7deg; --w:132px;">
-            <button type="button" class="work-skin" data-cursor="查看">
-              <img src="assets/posters/shuanglu-igniter-thumb.webp" alt="双鹿电池海报，燃气灶蓝色火焰" width="600" height="850" draggable="false">
-            </button>
-            <span class="tape tape-sky" aria-hidden="true"></span>
-          </figure>
-
-          <span class="marble" data-marble data-color="pink" style="--x:38%; --y:76%; --s:46px;"></span>
-          <span class="marble" data-marble data-color="lemon" style="--x:44%; --y:81%; --s:38px;"></span>
-          <span class="marble" data-marble data-color="mint" style="--x:50%; --y:74%; --s:42px;"></span>
-          <span class="marble" data-marble data-color="lilac" style="--x:55%; --y:82%; --s:36px;"></span>
-          <span class="marble" data-marble data-color="tangerine" style="--x:34%; --y:83%; --s:40px;"></span>
-          <span class="marble" data-marble data-color="sky" style="--x:60%; --y:76%; --s:44px;"></span>
-          <span class="marble" data-marble data-color="cream" style="--x:48%; --y:86%; --s:32px;"></span>
-          <span class="marble" data-marble data-color="hot" style="--x:41%; --y:88%; --s:34px;"></span>
+    <section class="hero" id="intro">
+      <div class="hero-copy">
+        <p class="hero-en" aria-hidden="true">
+          <span class="hero-en-shift">LUO XIN</span>
+          <span class="hero-en-fill">LUO XIN</span>
+        </p>
+        <h1 class="hero-name">
+          <span class="tile tile-pink">罗</span>
+          <span class="tile tile-lemon">鑫</span>
+        </h1>
+        <p class="role-pill">广告学 · 视觉设计</p>
+        <p class="hero-school">重庆理工大学语言与传播学院 2025 级</p>
+        <p class="hero-lead">做品牌命题下的系列海报、微电影广告和内容策划。现任创意大联盟社长，班长兼文娱委员。</p>
+        <div class="hero-stickers">
+          <span class="sticker sticker-hire">HIRE ME</span>
+          <span class="sticker sticker-seal">100% 原创</span>
+          <span class="sticker sticker-job">社长</span>
         </div>
+      </div>
+
+      <div class="hero-board" id="hero-board">
+        <p class="drag-hint">拖一拖海报</p>
+
+        <figure class="float-card" data-drag style="--r:-5deg; --x:6%; --y:4%; --w:38%;" data-cursor="拖我">
+          <button class="float-skin" type="button" data-group="posters" data-full="assets/posters/hailu-beach.webp" data-title="给眼睛放个假" data-kicker="海露 · 学院奖 2026">
+            <img src="assets/posters/hailu-beach-thumb.webp" alt="海露海报，眼睛角色在海边度假" width="600" height="850" draggable="false">
+          </button>
+          <span class="tape tape-yellow" aria-hidden="true"></span>
+        </figure>
+
+        <figure class="float-card is-polaroid" data-drag style="--r:6deg; --x:60%; --y:2%; --w:30%;" data-cursor="拖我">
+          <div class="float-skin polaroid-skin">
+            <img src="assets/portrait/luo-xin-portrait.webp" alt="罗鑫肖像" width="720" height="900" draggable="false">
+            <figcaption>罗鑫 · 重庆</figcaption>
+          </div>
+          <span class="tape tape-pink" aria-hidden="true"></span>
+        </figure>
+
+        <figure class="float-card" data-drag style="--r:4deg; --x:54%; --y:36%; --w:33%;" data-cursor="拖我">
+          <button class="float-skin" type="button" data-group="posters" data-full="assets/posters/yangyuanqing-hearts.webp" data-title="头等大事" data-kicker="养元青 · 学院奖 2026">
+            <img src="assets/posters/yangyuanqing-hearts-thumb.webp" alt="养元青海报，金银葫芦角色散布爱心" width="600" height="850" draggable="false">
+          </button>
+          <span class="badge-new">★ NEW</span>
+        </figure>
+
+        <figure class="float-card" data-drag style="--r:-3deg; --x:4%; --y:44%; --w:31%;" data-cursor="拖我">
+          <button class="float-skin" type="button" data-group="posters" data-full="assets/posters/sanjin-stage.webp" data-title="舞台" data-kicker="三金西瓜霜 · 学院奖 2026">
+            <img src="assets/posters/sanjin-stage-thumb.webp" alt="三金西瓜霜海报，粉红色舞台麦克风" width="600" height="850" draggable="false">
+          </button>
+          <span class="tape tape-mint" aria-hidden="true"></span>
+        </figure>
+
+        <figure class="float-card" data-drag style="--r:3deg; --x:33%; --y:58%; --w:25%;" data-cursor="拖我">
+          <button class="float-skin" type="button" data-group="posters" data-full="assets/posters/centaine-wave.webp" data-title="植物润养" data-kicker="100 年润发 · 学院奖 2026">
+            <img src="assets/posters/centaine-wave-thumb.webp" alt="100 年润发海报，绿色发丝构成海浪" width="600" height="850" draggable="false">
+          </button>
+        </figure>
+
+        <span class="doodle doodle-star" aria-hidden="true">★</span>
+        <span class="doodle doodle-burst" aria-hidden="true"></span>
+        <span class="doodle doodle-dot" aria-hidden="true"></span>
       </div>
     </section>
 
-    <section class="level level-print" id="posters" data-stage="STAGE 01" data-stage-title="平面设计">
-      <div class="booth booth-print">
-        <header class="booth-sign sign-print">
-          <p class="stage-no">STAGE 01</p>
+    <section class="section section-mint" id="posters">
+      <div class="tear tear-top" aria-hidden="true"></div>
+      <header class="section-head">
+        <span class="num-sticker">02</span>
+        <div>
+          <p class="section-en">POSTERS</p>
           <h2>平面设计</h2>
-          <p class="booth-desc">学院奖 2026 秋季赛。五个品牌命题，每题三幅。点开或投进查看窗看大图。</p>
-        </header>
-        <div class="booth-body">
-          <div class="filters" role="tablist" aria-label="按品牌筛选">
-            <button type="button" class="chip is-on chip-lemon" data-filter="all" role="tab" aria-selected="true">全部</button>
-            <button type="button" class="chip chip-sky" data-filter="hailu" role="tab" aria-selected="false">海露</button>
-            <button type="button" class="chip chip-mint" data-filter="yangyuanqing" role="tab" aria-selected="false">养元青</button>
-            <button type="button" class="chip chip-pink" data-filter="sanjin" role="tab" aria-selected="false">三金西瓜霜</button>
-            <button type="button" class="chip chip-lilac" data-filter="centaine" role="tab" aria-selected="false">100 年润发</button>
-            <button type="button" class="chip chip-tangerine" data-filter="shuanglu" role="tab" aria-selected="false">双鹿电池</button>
-          </div>
-          <div class="print-floor">
-            <div class="poster-grid" id="poster-grid">
-              <button class="sticker-card" type="button" style="--r:-2.2deg" data-group="posters" data-series="hailu" data-full="assets/posters/hailu-beach.webp" data-title="给眼睛放个假" data-kicker="海露 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/hailu-beach-thumb.webp" alt="海露海报，眼睛角色在海边度假" width="600" height="850"></span>
-                <span class="sticker-caption"><i>海露</i>给眼睛放个假</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:1.8deg" data-group="posters" data-series="hailu" data-full="assets/posters/hailu-spring.webp" data-title="眼睛的温泉假期" data-kicker="海露 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/hailu-spring-thumb.webp" alt="海露海报，眼睛角色在温泉中休息" width="600" height="850"></span>
-                <span class="sticker-caption"><i>海露</i>温泉假期</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:-1.2deg" data-group="posters" data-series="hailu" data-full="assets/posters/hailu-mountain.webp" data-title="看得远一点" data-kicker="海露 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/hailu-mountain-thumb.webp" alt="海露海报，眼睛角色站在山峰上看海" width="600" height="850"></span>
-                <span class="sticker-caption"><i>海露</i>看得远一点</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:2.4deg" data-group="posters" data-series="yangyuanqing" data-full="assets/posters/yangyuanqing-clock.webp" data-title="金银葫芦守门" data-kicker="养元青 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/yangyuanqing-clock-thumb.webp" alt="养元青海报，金银葫芦角色与闹钟" width="600" height="850"></span>
-                <span class="sticker-caption"><i>养元青</i>金银葫芦守门</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:-2.8deg" data-group="posters" data-series="yangyuanqing" data-full="assets/posters/yangyuanqing-hearts.webp" data-title="头等大事" data-kicker="养元青 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/yangyuanqing-hearts-thumb.webp" alt="养元青海报，金银葫芦角色散布爱心" width="600" height="850"></span>
-                <span class="sticker-caption"><i>养元青</i>头等大事</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:1.4deg" data-group="posters" data-series="yangyuanqing" data-full="assets/posters/yangyuanqing-interview.webp" data-title="面试现场" data-kicker="养元青 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/yangyuanqing-interview-thumb.webp" alt="养元青海报，面试中的男性角色" width="600" height="850"></span>
-                <span class="sticker-caption"><i>养元青</i>面试现场</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:-1.6deg" data-group="posters" data-series="sanjin" data-full="assets/posters/sanjin-green.webp" data-title="嗓子免打扰" data-kicker="三金西瓜霜 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/sanjin-green-thumb.webp" alt="三金西瓜霜海报，绿色办公室场景" width="600" height="850"></span>
-                <span class="sticker-caption"><i>三金西瓜霜</i>嗓子免打扰</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:2.1deg" data-group="posters" data-series="sanjin" data-full="assets/posters/sanjin-blue.webp" data-title="办公室" data-kicker="三金西瓜霜 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/sanjin-blue-thumb.webp" alt="三金西瓜霜海报，蓝色办公室场景" width="600" height="850"></span>
-                <span class="sticker-caption"><i>三金西瓜霜</i>办公室</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:-2.5deg" data-group="posters" data-series="sanjin" data-full="assets/posters/sanjin-stage.webp" data-title="舞台" data-kicker="三金西瓜霜 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/sanjin-stage-thumb.webp" alt="三金西瓜霜海报，粉红色舞台麦克风" width="600" height="850"></span>
-                <span class="sticker-caption"><i>三金西瓜霜</i>舞台</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:1.7deg" data-group="posters" data-series="centaine" data-full="assets/posters/centaine-wave.webp" data-title="植物润养" data-kicker="100 年润发 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/centaine-wave-thumb.webp" alt="100 年润发海报，绿色发丝构成海浪" width="600" height="850"></span>
-                <span class="sticker-caption"><i>100 年润发</i>植物润养</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:-1.9deg" data-group="posters" data-series="centaine" data-full="assets/posters/centaine-mountain.webp" data-title="一亩茶山" data-kicker="100 年润发 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/centaine-mountain-thumb.webp" alt="100 年润发海报，绿色山峦与洗护产品" width="600" height="850"></span>
-                <span class="sticker-caption"><i>100 年润发</i>一亩茶山</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:2.6deg" data-group="posters" data-series="centaine" data-full="assets/posters/centaine-hair.webp" data-title="发根立起" data-kicker="100 年润发 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/centaine-hair-thumb.webp" alt="100 年润发海报，发丝与植物叶片" width="600" height="850"></span>
-                <span class="sticker-caption"><i>100 年润发</i>发根立起</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:-2deg" data-group="posters" data-series="shuanglu" data-full="assets/posters/shuanglu-igniter.webp" data-title="9000 次打火" data-kicker="双鹿电池 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/shuanglu-igniter-thumb.webp" alt="双鹿电池海报，燃气灶蓝色火焰" width="600" height="850"></span>
-                <span class="sticker-caption"><i>双鹿电池</i>9000 次打火</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:1.2deg" data-group="posters" data-series="shuanglu" data-full="assets/posters/shuanglu-door.webp" data-title="23000 次开门" data-kicker="双鹿电池 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/shuanglu-door-thumb.webp" alt="双鹿电池海报，电子门锁与电池" width="600" height="850"></span>
-                <span class="sticker-caption"><i>双鹿电池</i>23000 次开门</span>
-              </button>
-              <button class="sticker-card" type="button" style="--r:-1.4deg" data-group="posters" data-series="shuanglu" data-full="assets/posters/shuanglu-light.webp" data-title="十年质保" data-kicker="双鹿电池 · 学院奖 2026" data-cursor="查看" data-pick>
-                <span class="sticker-frame"><img src="assets/posters/shuanglu-light-thumb.webp" alt="双鹿电池海报，夜间停车场与路灯" width="600" height="850"></span>
-                <span class="sticker-caption"><i>双鹿电池</i>十年质保</span>
-              </button>
-            </div>
-            <aside class="view-window" id="poster-dock">
-              <p class="window-en">VIEW</p>
-              <strong>查看窗</strong>
-              <div class="window-slot" id="poster-slot"></div>
-              <p class="window-tip">把作品投进来</p>
-            </aside>
-          </div>
+          <p class="section-desc">学院奖 2026 秋季赛。五个品牌命题，每题三幅。点开可看大图。</p>
         </div>
+      </header>
+      <div class="filters" role="tablist" aria-label="按品牌筛选">
+        <button type="button" class="is-on chip-lemon" data-filter="all" role="tab" aria-selected="true">全部</button>
+        <button type="button" class="chip-sky" data-filter="hailu" role="tab" aria-selected="false">海露</button>
+        <button type="button" class="chip-mint" data-filter="yangyuanqing" role="tab" aria-selected="false">养元青</button>
+        <button type="button" class="chip-pink" data-filter="sanjin" role="tab" aria-selected="false">三金西瓜霜</button>
+        <button type="button" class="chip-lilac" data-filter="centaine" role="tab" aria-selected="false">100 年润发</button>
+        <button type="button" class="chip-tangerine" data-filter="shuanglu" role="tab" aria-selected="false">双鹿电池</button>
+      </div>
+      <div class="poster-grid" id="poster-grid">
+        <button class="poster-card reveal" type="button" style="--r:-2.2deg" data-group="posters" data-series="hailu" data-full="assets/posters/hailu-beach.webp" data-title="给眼睛放个假" data-kicker="海露 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/hailu-beach-thumb.webp" alt="海露海报，眼睛角色在海边度假" width="600" height="850"></span>
+            <span class="poster-caption"><i>海露</i>给眼睛放个假</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:1.8deg" data-group="posters" data-series="hailu" data-full="assets/posters/hailu-spring.webp" data-title="眼睛的温泉假期" data-kicker="海露 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/hailu-spring-thumb.webp" alt="海露海报，眼睛角色在温泉中休息" width="600" height="850"></span>
+            <span class="poster-caption"><i>海露</i>温泉假期</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:-1.2deg" data-group="posters" data-series="hailu" data-full="assets/posters/hailu-mountain.webp" data-title="看得远一点" data-kicker="海露 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/hailu-mountain-thumb.webp" alt="海露海报，眼睛角色站在山峰上看海" width="600" height="850"></span>
+            <span class="poster-caption"><i>海露</i>看得远一点</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:2.4deg" data-group="posters" data-series="yangyuanqing" data-full="assets/posters/yangyuanqing-clock.webp" data-title="金银葫芦守门" data-kicker="养元青 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/yangyuanqing-clock-thumb.webp" alt="养元青海报，金银葫芦角色与闹钟" width="600" height="850"></span>
+            <span class="poster-caption"><i>养元青</i>金银葫芦守门</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:-2.8deg" data-group="posters" data-series="yangyuanqing" data-full="assets/posters/yangyuanqing-hearts.webp" data-title="头等大事" data-kicker="养元青 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/yangyuanqing-hearts-thumb.webp" alt="养元青海报，金银葫芦角色散布爱心" width="600" height="850"></span>
+            <span class="poster-caption"><i>养元青</i>头等大事</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:1.4deg" data-group="posters" data-series="yangyuanqing" data-full="assets/posters/yangyuanqing-interview.webp" data-title="面试现场" data-kicker="养元青 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/yangyuanqing-interview-thumb.webp" alt="养元青海报，面试中的男性角色" width="600" height="850"></span>
+            <span class="poster-caption"><i>养元青</i>面试现场</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:-1.6deg" data-group="posters" data-series="sanjin" data-full="assets/posters/sanjin-green.webp" data-title="嗓子免打扰" data-kicker="三金西瓜霜 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/sanjin-green-thumb.webp" alt="三金西瓜霜海报，绿色办公室场景" width="600" height="850"></span>
+            <span class="poster-caption"><i>三金西瓜霜</i>嗓子免打扰</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:2.1deg" data-group="posters" data-series="sanjin" data-full="assets/posters/sanjin-blue.webp" data-title="办公室" data-kicker="三金西瓜霜 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/sanjin-blue-thumb.webp" alt="三金西瓜霜海报，蓝色办公室场景" width="600" height="850"></span>
+            <span class="poster-caption"><i>三金西瓜霜</i>办公室</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:-2.5deg" data-group="posters" data-series="sanjin" data-full="assets/posters/sanjin-stage.webp" data-title="舞台" data-kicker="三金西瓜霜 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/sanjin-stage-thumb.webp" alt="三金西瓜霜海报，粉红色舞台麦克风" width="600" height="850"></span>
+            <span class="poster-caption"><i>三金西瓜霜</i>舞台</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:1.7deg" data-group="posters" data-series="centaine" data-full="assets/posters/centaine-wave.webp" data-title="植物润养" data-kicker="100 年润发 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/centaine-wave-thumb.webp" alt="100 年润发海报，绿色发丝构成海浪" width="600" height="850"></span>
+            <span class="poster-caption"><i>100 年润发</i>植物润养</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:-1.9deg" data-group="posters" data-series="centaine" data-full="assets/posters/centaine-mountain.webp" data-title="一亩茶山" data-kicker="100 年润发 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/centaine-mountain-thumb.webp" alt="100 年润发海报，绿色山峦与洗护产品" width="600" height="850"></span>
+            <span class="poster-caption"><i>100 年润发</i>一亩茶山</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:2.6deg" data-group="posters" data-series="centaine" data-full="assets/posters/centaine-hair.webp" data-title="发根立起" data-kicker="100 年润发 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/centaine-hair-thumb.webp" alt="100 年润发海报，发丝与植物叶片" width="600" height="850"></span>
+            <span class="poster-caption"><i>100 年润发</i>发根立起</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:-2deg" data-group="posters" data-series="shuanglu" data-full="assets/posters/shuanglu-igniter.webp" data-title="9000 次打火" data-kicker="双鹿电池 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/shuanglu-igniter-thumb.webp" alt="双鹿电池海报，燃气灶蓝色火焰" width="600" height="850"></span>
+            <span class="poster-caption"><i>双鹿电池</i>9000 次打火</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:1.2deg" data-group="posters" data-series="shuanglu" data-full="assets/posters/shuanglu-door.webp" data-title="23000 次开门" data-kicker="双鹿电池 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/shuanglu-door-thumb.webp" alt="双鹿电池海报，电子门锁与电池" width="600" height="850"></span>
+            <span class="poster-caption"><i>双鹿电池</i>23000 次开门</span>
+          </span>
+        </button>
+        <button class="poster-card reveal" type="button" style="--r:-1.4deg" data-group="posters" data-series="shuanglu" data-full="assets/posters/shuanglu-light.webp" data-title="十年质保" data-kicker="双鹿电池 · 学院奖 2026" data-cursor="查看">
+          <span class="poster-skin">
+            <span class="poster-frame"><img src="assets/posters/shuanglu-light-thumb.webp" alt="双鹿电池海报，夜间停车场与路灯" width="600" height="850"></span>
+            <span class="poster-caption"><i>双鹿电池</i>十年质保</span>
+          </span>
+        </button>
       </div>
     </section>
 
-    <section class="level level-film" id="films" data-stage="STAGE 02" data-stage-title="影像">
-      <div class="booth booth-film">
-        <div class="awning" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-        <header class="booth-sign sign-film">
-          <p class="stage-no">STAGE 02</p>
+    <div class="marquee marquee-alt" aria-hidden="true">
+      <div class="marquee-track reverse">
+        <span>海露 ★ 养元青 ★ 三金西瓜霜 ★ 100 年润发 ★ 双鹿电池 ★ 学院奖 2026 ★ </span>
+        <span>海露 ★ 养元青 ★ 三金西瓜霜 ★ 100 年润发 ★ 双鹿电池 ★ 学院奖 2026 ★ </span>
+      </div>
+    </div>
+
+    <section class="section section-sky" id="films">
+      <header class="section-head">
+        <span class="num-sticker num-tangerine">03</span>
+        <div>
+          <p class="section-en">FILMS</p>
           <h2>影像</h2>
-          <p class="booth-desc">微电影广告与影像片段。点选片目，或把票投进电视机。</p>
-        </header>
-        <div class="booth-body film-floor">
-          <div class="tv-booth">
-            <p class="neon" aria-hidden="true">NOW SHOWING</p>
-            <div class="tv" id="tv-dock">
-              <span class="tv-rec">● REC</span>
-              <div class="tv-screen">
-                <video id="film-video" playsinline controls preload="metadata" poster="assets/video/tangled-ideas-poster.jpg" src="assets/video/tangled-ideas.mp4"></video>
-              </div>
-              <div class="tv-knobs" aria-hidden="true"><i></i><i></i></div>
+          <p class="section-desc">微电影广告与影像片段。点选片目即可播放。</p>
+        </div>
+      </header>
+      <div class="film-stage">
+        <div class="tv reveal">
+          <div class="tv-bezel">
+            <span class="sticker sticker-rec">● REC</span>
+            <div class="tv-screen">
+              <video id="film-video" playsinline controls preload="metadata" poster="assets/video/tangled-ideas-poster.jpg" src="assets/video/tangled-ideas.mp4"></video>
             </div>
-            <p class="tv-caption" id="film-caption"><b>让想法打结</b><i>微电影广告 · 2026 · 大广赛重庆赛区二等奖</i></p>
           </div>
-          <ol class="ticket-rail" id="film-list">
-            <li>
-              <button type="button" class="film-ticket is-on" data-cursor="播放" data-src="assets/video/tangled-ideas.mp4" data-poster="assets/video/tangled-ideas-poster.jpg" data-title="让想法打结" data-meta="微电影广告 · 2026 · 大广赛重庆赛区二等奖" data-pick data-film>
-                <span class="film-thumb"><img src="assets/video/tangled-ideas-poster-thumb.jpg" alt=""></span>
-                <span class="film-meta">
-                  <b>让想法打结</b>
-                  <i>微电影广告 · 2026</i>
-                  <em>大广赛重庆赛区二等奖</em>
-                </span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="film-ticket" data-cursor="播放" data-src="assets/video/forest-story.mp4" data-poster="assets/video/forest-story-poster.jpg" data-title="让生活，长出森林" data-meta="微电影广告 · 2026 · 大广赛重庆赛区三等奖" data-pick data-film>
-                <span class="film-thumb"><img src="assets/video/forest-story-poster-thumb.jpg" alt=""></span>
-                <span class="film-meta">
-                  <b>让生活，长出森林</b>
-                  <i>微电影广告 · 2026</i>
-                  <em>大广赛重庆赛区三等奖</em>
-                </span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="film-ticket" data-cursor="播放" data-src="assets/video/creative-workflow.mp4" data-poster="assets/video/creative-workflow-poster.jpg" data-title="创意工作流" data-meta="影像片段 · 2026" data-pick data-film>
-                <span class="film-thumb"><img src="assets/video/creative-workflow-poster-thumb.jpg" alt=""></span>
-                <span class="film-meta">
-                  <b>创意工作流</b>
-                  <i>影像片段 · 2026</i>
-                </span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="film-ticket" data-cursor="播放" data-src="assets/video/botanical-film.mp4" data-poster="assets/video/botanical-film-poster.jpg" data-title="植物影像" data-meta="影像片段 · 2026" data-pick data-film>
-                <span class="film-thumb"><img src="assets/video/botanical-film-poster-thumb.jpg" alt=""></span>
-                <span class="film-meta">
-                  <b>植物影像</b>
-                  <i>影像片段 · 2026</i>
-                </span>
-              </button>
-            </li>
-          </ol>
+          <p class="tv-caption" id="film-caption"><b>让想法打结</b><i>微电影广告 · 2026 · 大广赛重庆赛区二等奖</i></p>
         </div>
+        <ol class="film-list" id="film-list">
+          <li class="reveal">
+            <button type="button" class="film-item is-on" data-cursor="播放" data-src="assets/video/tangled-ideas.mp4" data-poster="assets/video/tangled-ideas-poster.jpg" data-title="让想法打结" data-meta="微电影广告 · 2026 · 大广赛重庆赛区二等奖">
+              <span class="film-thumb"><img src="assets/video/tangled-ideas-poster-thumb.jpg" alt=""></span>
+              <span class="film-meta">
+                <b>让想法打结</b>
+                <i>微电影广告 · 2026</i>
+                <em>大广赛重庆赛区二等奖</em>
+              </span>
+            </button>
+          </li>
+          <li class="reveal">
+            <button type="button" class="film-item" data-cursor="播放" data-src="assets/video/forest-story.mp4" data-poster="assets/video/forest-story-poster.jpg" data-title="让生活，长出森林" data-meta="微电影广告 · 2026 · 大广赛重庆赛区三等奖">
+              <span class="film-thumb"><img src="assets/video/forest-story-poster-thumb.jpg" alt=""></span>
+              <span class="film-meta">
+                <b>让生活，长出森林</b>
+                <i>微电影广告 · 2026</i>
+                <em>大广赛重庆赛区三等奖</em>
+              </span>
+            </button>
+          </li>
+          <li class="reveal">
+            <button type="button" class="film-item" data-cursor="播放" data-src="assets/video/creative-workflow.mp4" data-poster="assets/video/creative-workflow-poster.jpg" data-title="创意工作流" data-meta="影像片段 · 2026">
+              <span class="film-thumb"><img src="assets/video/creative-workflow-poster-thumb.jpg" alt=""></span>
+              <span class="film-meta">
+                <b>创意工作流</b>
+                <i>影像片段 · 2026</i>
+              </span>
+            </button>
+          </li>
+          <li class="reveal">
+            <button type="button" class="film-item" data-cursor="播放" data-src="assets/video/botanical-film.mp4" data-poster="assets/video/botanical-film-poster.jpg" data-title="植物影像" data-meta="影像片段 · 2026">
+              <span class="film-thumb"><img src="assets/video/botanical-film-poster-thumb.jpg" alt=""></span>
+              <span class="film-meta">
+                <b>植物影像</b>
+                <i>影像片段 · 2026</i>
+              </span>
+            </button>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section class="level level-prize" id="awards" data-stage="STAGE 03" data-stage-title="证书">
-      <div class="booth booth-prize">
-        <header class="booth-sign sign-prize">
-          <p class="stage-no">STAGE 03</p>
+    <section class="section section-lilac" id="awards">
+      <div class="tear tear-top tear-lilac" aria-hidden="true"></div>
+      <header class="section-head">
+        <span class="num-sticker num-lemon">04</span>
+        <div>
+          <p class="section-en">AWARDS</p>
           <h2>证书</h2>
-          <p class="booth-desc">奖状按原件标注。点开或投进查看窗看大图。</p>
-        </header>
-        <div class="booth-body prize-floor">
-          <div class="prize-shelf" id="award-grid">
-            <button class="prize-card" type="button" style="--r:-2deg" data-group="awards" data-full="assets/awards/award-idea-excellent-chaos.webp" data-title="《重塑混乱，自成山海》" data-kicker="第18届全国大学生广告艺术大赛 · 优秀奖" data-cursor="查看" data-pick>
-              <span class="prize-frame"><img src="assets/awards/award-idea-excellent-chaos-thumb.webp" alt="《重塑混乱，自成山海》优秀奖证书" width="640" height="900"></span>
-              <span class="prize-caption">
-                <b>《重塑混乱，自成山海》</b>
-                <i>第18届全国大学生广告艺术大赛 · 优秀奖</i>
-              </span>
-            </button>
-            <button class="prize-card" type="button" style="--r:1.6deg" data-group="awards" data-full="assets/awards/award-idea-second-ideas.webp" data-title="《别让想法打结》" data-kicker="第18届全国大学生广告艺术大赛重庆赛区 · 二等奖" data-cursor="查看" data-pick>
-              <span class="prize-frame"><img src="assets/awards/award-idea-second-ideas-thumb.webp" alt="《别让想法打结》重庆赛区二等奖证书" width="640" height="900"></span>
-              <span class="prize-caption">
-                <b>《别让想法打结》</b>
-                <i>第18届全国大学生广告艺术大赛重庆赛区 · 二等奖</i>
-              </span>
-            </button>
-            <button class="prize-card" type="button" style="--r:-1.4deg" data-group="awards" data-full="assets/awards/award-idea-third-forest.webp" data-title="《让生活，长出森林》" data-kicker="第18届全国大学生广告艺术大赛重庆赛区 · 三等奖" data-cursor="查看" data-pick>
-              <span class="prize-frame"><img src="assets/awards/award-idea-third-forest-thumb.webp" alt="《让生活，长出森林》三等奖证书" width="640" height="900"></span>
-              <span class="prize-caption">
-                <b>《让生活，长出森林》</b>
-                <i>第18届全国大学生广告艺术大赛重庆赛区 · 三等奖</i>
-              </span>
-            </button>
-            <button class="prize-card" type="button" style="--r:2.2deg" data-group="awards" data-full="assets/awards/award-idea-excellent-straw.webp" data-title="《童心吸管，一键通关！》" data-kicker="第18届全国大学生广告艺术大赛重庆赛区 · 优秀奖" data-cursor="查看" data-pick>
-              <span class="prize-frame"><img src="assets/awards/award-idea-excellent-straw-thumb.webp" alt="《童心吸管，一键通关！》优秀奖证书" width="640" height="900"></span>
-              <span class="prize-caption">
-                <b>《童心吸管，一键通关！》</b>
-                <i>第18届全国大学生广告艺术大赛重庆赛区 · 优秀奖</i>
-              </span>
-            </button>
-            <button class="prize-card" type="button" style="--r:-1.8deg" data-group="awards" data-full="assets/awards/award-reverse-world-first.webp" data-title="“倒过来看世界”短视频大赛" data-kicker="重庆理工大学果立方 · 一等奖" data-cursor="查看" data-pick>
-              <span class="prize-frame"><img src="assets/awards/award-reverse-world-first-thumb.webp" alt="“倒过来看世界”短视频大赛一等奖奖杯与证书" width="640" height="900"></span>
-              <span class="prize-caption">
-                <b>“倒过来看世界”短视频大赛</b>
-                <i>重庆理工大学果立方 · 一等奖</i>
-              </span>
-            </button>
-            <button class="prize-card is-wide" type="button" style="--r:1.2deg" data-group="awards" data-full="assets/awards/award-carbon-pioneer-first.webp" data-title="“碳”路先锋" data-kicker="新文科实践创新大赛校内 · 一等奖" data-cursor="查看" data-pick>
-              <span class="prize-frame is-wide"><img src="assets/awards/award-carbon-pioneer-first-thumb.webp" alt="“碳”路先锋项目新文科实践创新大赛一等奖证书" width="600" height="426"></span>
-              <span class="prize-caption">
-                <b>“碳”路先锋</b>
-                <i>新文科实践创新大赛校内 · 一等奖</i>
-              </span>
-            </button>
-            <button class="prize-card is-wide" type="button" style="--r:-2.4deg" data-group="awards" data-full="assets/awards/award-challenge-cup-third.webp" data-title="“挑战杯”重庆理工大学选拔赛" data-kicker="校内选拔赛 · 三等奖" data-cursor="查看" data-pick>
-              <span class="prize-frame is-wide"><img src="assets/awards/award-challenge-cup-third-thumb.webp" alt="“挑战杯”重庆理工大学选拔赛三等奖证书" width="600" height="450"></span>
-              <span class="prize-caption">
-                <b>“挑战杯”重庆理工大学选拔赛</b>
-                <i>校内选拔赛 · 三等奖</i>
-              </span>
-            </button>
-          </div>
-          <aside class="view-window window-prize" id="award-dock">
-            <p class="window-en">PRIZE</p>
-            <strong>查看窗</strong>
-            <div class="window-slot" id="award-slot"></div>
-            <p class="window-tip">把证书投进来</p>
-          </aside>
+          <p class="section-desc">奖状按原件标注。点开可看大图。</p>
         </div>
+      </header>
+      <div class="award-grid">
+        <button class="award-card reveal" type="button" style="--r:-2deg" data-group="awards" data-full="assets/awards/award-idea-excellent-chaos.webp" data-title="《重塑混乱，自成山海》" data-kicker="第18届全国大学生广告艺术大赛 · 优秀奖" data-cursor="查看">
+          <span class="award-skin">
+            <span class="award-frame"><img src="assets/awards/award-idea-excellent-chaos-thumb.webp" alt="《重塑混乱，自成山海》优秀奖证书" width="640" height="900"></span>
+            <span class="award-caption">
+              <b>《重塑混乱，自成山海》</b>
+              <i>第18届全国大学生广告艺术大赛 · 优秀奖</i>
+            </span>
+          </span>
+        </button>
+        <button class="award-card reveal" type="button" style="--r:1.6deg" data-group="awards" data-full="assets/awards/award-idea-second-ideas.webp" data-title="《别让想法打结》" data-kicker="第18届全国大学生广告艺术大赛重庆赛区 · 二等奖" data-cursor="查看">
+          <span class="award-skin">
+            <span class="award-frame"><img src="assets/awards/award-idea-second-ideas-thumb.webp" alt="《别让想法打结》重庆赛区二等奖证书" width="640" height="900"></span>
+            <span class="award-caption">
+              <b>《别让想法打结》</b>
+              <i>第18届全国大学生广告艺术大赛重庆赛区 · 二等奖</i>
+            </span>
+          </span>
+        </button>
+        <button class="award-card reveal" type="button" style="--r:-1.4deg" data-group="awards" data-full="assets/awards/award-idea-third-forest.webp" data-title="《让生活，长出森林》" data-kicker="第18届全国大学生广告艺术大赛重庆赛区 · 三等奖" data-cursor="查看">
+          <span class="award-skin">
+            <span class="award-frame"><img src="assets/awards/award-idea-third-forest-thumb.webp" alt="《让生活，长出森林》三等奖证书" width="640" height="900"></span>
+            <span class="award-caption">
+              <b>《让生活，长出森林》</b>
+              <i>第18届全国大学生广告艺术大赛重庆赛区 · 三等奖</i>
+            </span>
+          </span>
+        </button>
+        <button class="award-card reveal" type="button" style="--r:2.2deg" data-group="awards" data-full="assets/awards/award-idea-excellent-straw.webp" data-title="《童心吸管，一键通关！》" data-kicker="第18届全国大学生广告艺术大赛重庆赛区 · 优秀奖" data-cursor="查看">
+          <span class="award-skin">
+            <span class="award-frame"><img src="assets/awards/award-idea-excellent-straw-thumb.webp" alt="《童心吸管，一键通关！》优秀奖证书" width="640" height="900"></span>
+            <span class="award-caption">
+              <b>《童心吸管，一键通关！》</b>
+              <i>第18届全国大学生广告艺术大赛重庆赛区 · 优秀奖</i>
+            </span>
+          </span>
+        </button>
+        <button class="award-card reveal" type="button" style="--r:-1.8deg" data-group="awards" data-full="assets/awards/award-reverse-world-first.webp" data-title="“倒过来看世界”短视频大赛" data-kicker="重庆理工大学果立方 · 一等奖" data-cursor="查看">
+          <span class="award-skin">
+            <span class="award-frame"><img src="assets/awards/award-reverse-world-first-thumb.webp" alt="“倒过来看世界”短视频大赛一等奖奖杯与证书" width="640" height="900"></span>
+            <span class="award-caption">
+              <b>“倒过来看世界”短视频大赛</b>
+              <i>重庆理工大学果立方 · 一等奖</i>
+            </span>
+          </span>
+        </button>
+        <button class="award-card reveal" type="button" style="--r:1.2deg" data-group="awards" data-full="assets/awards/award-carbon-pioneer-first.webp" data-title="“碳”路先锋" data-kicker="新文科实践创新大赛校内 · 一等奖" data-cursor="查看">
+          <span class="award-skin">
+            <span class="award-frame is-wide"><img src="assets/awards/award-carbon-pioneer-first-thumb.webp" alt="“碳”路先锋项目新文科实践创新大赛一等奖证书" width="600" height="426"></span>
+            <span class="award-caption">
+              <b>“碳”路先锋</b>
+              <i>新文科实践创新大赛校内 · 一等奖</i>
+            </span>
+          </span>
+        </button>
+        <button class="award-card reveal" type="button" style="--r:-2.4deg" data-group="awards" data-full="assets/awards/award-challenge-cup-third.webp" data-title="“挑战杯”重庆理工大学选拔赛" data-kicker="校内选拔赛 · 三等奖" data-cursor="查看">
+          <span class="award-skin">
+            <span class="award-frame is-wide"><img src="assets/awards/award-challenge-cup-third-thumb.webp" alt="“挑战杯”重庆理工大学选拔赛三等奖证书" width="600" height="450"></span>
+            <span class="award-caption">
+              <b>“挑战杯”重庆理工大学选拔赛</b>
+              <i>校内选拔赛 · 三等奖</i>
+            </span>
+          </span>
+        </button>
       </div>
     </section>
 
-    <section class="level level-cv" id="cv" data-stage="STAGE 04" data-stage-title="简历">
-      <div class="booth booth-cv">
-        <header class="booth-sign sign-cv">
-          <p class="stage-no">STAGE 04</p>
+    <section class="section section-pink" id="cv">
+      <header class="section-head">
+        <span class="num-sticker num-mint">05</span>
+        <div>
+          <p class="section-en">RESUME</p>
           <h2>简历</h2>
-          <p class="booth-desc">重庆理工大学语言与传播学院广告学 2025 级本科生。</p>
-        </header>
-        <div class="cv-blotter">
-          <aside class="cv-portrait">
-            <figure class="cv-photo">
-              <span class="tape tape-lemon tape-tl" aria-hidden="true"></span>
-              <span class="tape tape-pink tape-tr" aria-hidden="true"></span>
-              <img src="assets/portrait/luo-xin-portrait.webp" alt="罗鑫肖像" width="720" height="900">
-            </figure>
-            <p class="cv-name">罗鑫</p>
-            <p class="cv-latin">Luo Xin</p>
-            <p class="cv-tag">广告学 · 视觉设计</p>
-            <a class="pdf-link" href="assets/docs/罗鑫_简历.pdf" download>下载 PDF 简历</a>
-          </aside>
-          <div class="cv-body">
-            <dl class="facts">
-              <div class="fact fact-lemon"><dt>就读</dt><dd>重庆理工大学 / 广告学 / 2025 至今</dd></div>
-              <div class="fact fact-mint"><dt>职务</dt><dd>创意大联盟社长 · 班长兼文娱委员</dd></div>
-              <div class="fact fact-lilac"><dt>荣誉</dt><dd>文化先进个人</dd></div>
-              <div class="fact fact-sky"><dt>所在</dt><dd>重庆 / 可远程协作</dd></div>
-            </dl>
-            <h3>经历</h3>
-            <article class="job">
-              <header>
-                <p class="job-time">2025 至今</p>
-                <h4>重庆理工大学创意大联盟 · 社长</h4>
-              </header>
-              <p>负责社团运营、活动策划和成员协作，把校园创意实践推进到可展示、可交付的成果。</p>
-            </article>
-            <article class="job">
-              <header>
-                <p class="job-time">2025 至今</p>
-                <h4>广告学 2025 级 · 班长兼文娱委员</h4>
-              </header>
-              <p>统筹班级日常事务与文娱活动，跟任务分工、活动节点和现场执行。</p>
-            </article>
-            <div class="cv-cols">
-              <div>
-                <h3>能力</h3>
-                <ul class="skill-list">
-                  <li>内容策划 / 文案 / 脚本 / 分镜</li>
-                  <li>Photoshop / Illustrator / Canva</li>
-                  <li>剪映 / 生成式 AI / 提示词</li>
-                  <li>选片修正 / 画面合成 / 中文排版</li>
-                </ul>
-              </div>
-              <div>
-                <h3>联系</h3>
-                <ul class="contact">
-                  <li><a href="mailto:xluo0246@gmail.com">xluo0246@gmail.com</a></li>
-                  <li><a href="tel:13330266213">133 3026 6213</a></li>
-                </ul>
-              </div>
+          <p class="section-desc">重庆理工大学语言与传播学院广告学 2025 级本科生。</p>
+        </div>
+      </header>
+      <div class="cv-grid">
+        <aside class="cv-portrait reveal">
+          <figure class="cv-photo">
+            <span class="tape tape-yellow tape-tl" aria-hidden="true"></span>
+            <span class="tape tape-pink tape-tr" aria-hidden="true"></span>
+            <img src="assets/portrait/luo-xin-portrait.webp" alt="罗鑫肖像" width="720" height="900">
+          </figure>
+          <p class="cv-name">罗鑫</p>
+          <p class="cv-latin">Luo Xin</p>
+          <p class="cv-tag">广告学 · 视觉设计</p>
+          <a class="pdf-link" href="assets/docs/罗鑫_简历.pdf" download data-cursor="查看">下载 PDF 简历</a>
+        </aside>
+        <div class="cv-body">
+          <dl class="facts">
+            <div class="fact fact-lemon reveal"><dt>就读</dt><dd>重庆理工大学 / 广告学 / 2025 至今</dd></div>
+            <div class="fact fact-mint reveal"><dt>职务</dt><dd>创意大联盟社长 · 班长兼文娱委员</dd></div>
+            <div class="fact fact-lilac reveal"><dt>荣誉</dt><dd>文化先进个人</dd></div>
+            <div class="fact fact-sky reveal"><dt>所在</dt><dd>重庆 / 可远程协作</dd></div>
+          </dl>
+
+          <h3>经历</h3>
+          <article class="job reveal">
+            <header>
+              <p class="job-time">2025 至今</p>
+              <h4>重庆理工大学创意大联盟 · 社长</h4>
+            </header>
+            <p>负责社团运营、活动策划和成员协作，把校园创意实践推进到可展示、可交付的成果。</p>
+          </article>
+          <article class="job reveal">
+            <header>
+              <p class="job-time">2025 至今</p>
+              <h4>广告学 2025 级 · 班长兼文娱委员</h4>
+            </header>
+            <p>统筹班级日常事务与文娱活动，跟任务分工、活动节点和现场执行。</p>
+          </article>
+
+          <div class="cv-cols">
+            <div class="reveal">
+              <h3>能力</h3>
+              <ul class="skill-list">
+                <li>内容策划 / 文案 / 脚本 / 分镜</li>
+                <li>Photoshop / Illustrator / Canva</li>
+                <li>剪映 / 生成式 AI / 提示词</li>
+                <li>选片修正 / 画面合成 / 中文排版</li>
+              </ul>
+            </div>
+            <div class="reveal">
+              <h3>联系</h3>
+              <ul class="contact">
+                <li><a href="mailto:xluo0246@gmail.com" data-cursor="查看">xluo0246@gmail.com</a></li>
+                <li><a href="tel:13330266213" data-cursor="查看">133 3026 6213</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -449,7 +437,7 @@
 
   <footer class="site-foot">
     <p>© 2026 罗鑫</p>
-    <a href="mailto:xluo0246@gmail.com">xluo0246@gmail.com</a>
+    <a href="mailto:xluo0246@gmail.com" data-cursor="查看">xluo0246@gmail.com</a>
   </footer>
 
   <div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="viewer-title" hidden>
